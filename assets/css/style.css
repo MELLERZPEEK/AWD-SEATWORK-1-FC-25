@@ -1,0 +1,129 @@
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    margin: 0;
+    background-color: #121212;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.container {
+    background: #1e1e2f;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    width: 350px;
+    text-align: center;
+}
+
+
+h2, h3 {
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+
+.balance-card {
+    background: linear-gradient(135deg, #4CAF50, #2E7D32);
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    margin: 20px 0;
+    box-shadow: 0px 4px 8px rgba(0, 255, 127, 0.2);
+}
+
+
+input {
+    width: 90%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #444;
+    border-radius: 8px;
+    background: #222;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+}
+
+
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+}
+
+
+.cash-in {
+    background: #28a745;
+    color: #fff;
+}
+
+.cash-in:hover {
+    background: #218838;
+}
+
+
+.cash-out {
+    background: #dc3545;
+    color: #fff;
+}
+
+.cash-out:hover {
+    background: #c82333;
+}
+
+
+.logout {
+    background: #ffc107;
+    color: #000;
+}
+
+.logout:hover {
+    background: #e0a800;
+}
+
+
+#transaction-history {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    max-height: 150px;
+    overflow-y: auto;
+}
+
+#transaction-history li {
+    background: #2a2a3a;
+    padding: 8px;
+    margin: 5px 0;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.transaction-deposit {
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+.transaction-withdraw {
+    color: #dc3545;
+    font-weight: bold;
+}
+
+
+.error {
+    color: #ff4d4d;
+    font-size: 14px;
+    margin-top: 5px;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking System</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <div id="login-container" class="container">
+        <h2>Login</h2>
+        <input type="text" id="username" placeholder="Enter username">
+        <button onclick="login()">Login</button>
+    </div>
+
+    <div id="main-container" class="container" style="display: none;">
+        <h2>Welcome, <span id="user"></span></h2>
+        <p class="balance-card">Account Balance: ₱<span id="balance">10,000</span></p>
+        
+        <input type="number" id="amount" placeholder="Enter amount">
+        <input type="text" id="receiver" placeholder="Receiver's Name (for Cash Out)">
+        <p id="error" class="error"></p>
+        
+        <button class="cash-in" onclick="cashIn()">Cash In</button>
+        <button class="cash-out" onclick="cashOut()">Cash Out</button>
+        <button class="logout" onclick="logout()">Logout</button>
+    
+        <h3>Transaction History</h3>
+        <ul id="transaction-history"></ul>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
